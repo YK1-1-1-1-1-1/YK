@@ -1,0 +1,14 @@
+//200以内能被7整除的数
+#include <iostream.h>
+int main()
+{
+ int i;
+for(i=1;i<=200;i++)
+{if (i%7==0)
+{
+ cout<<"两百以内能被7整除的数"<<i<<endl;
+}
+}
+return 0;
+
+}

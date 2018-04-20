@@ -1,0 +1,36 @@
+//三个数比较大小
+#include<iostream>
+using namespace std;
+int main()
+{
+int result,max( int x ,int y, int z);//对max函数做声明
+int a,b,c;
+cout<<"a="<<endl;
+cin>>a;
+cout<<"b="<<endl;
+cin>>b;
+cout<<"c="<<endl;
+cin>>c;
+result=max(a,b,c);
+cout<<"max="<<result<<endl;
+return 0;
+}
+int max(int x,int y, int z)//定义max函数
+{
+ int m;
+ if (x>=y)
+ {
+   if (x>=z)
+	   m=x;
+   else 
+	   m=z;
+ }
+ else
+ {
+   if(y>=z)
+	   m=y;
+   else
+	   m=z;
+ }
+ return m;
+}
